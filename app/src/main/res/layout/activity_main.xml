@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="3dp"
+        android:id="@+id/ll"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:src="@drawable/pin"
+            android:layout_margin="2dp"
+            android:layout_height="25dp"></ImageView>
+   <TextView
+       android:layout_width="wrap_content"
+       android:text="Bengalore, Karnataka India"
+       android:layout_margin="2dp"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+       android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="28dp"
+            android:src="@drawable/user"
+            android:layout_height="28dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll"
+        android:id="@+id/ll2"
+
+        android:layout_height="wrap_content">
+    <EditText
+        android:textSize="20sp"
+        android:hint="Restaurant Name or dish"
+        android:drawableLeft="@drawable/search"
+        android:padding="7dp"
+        android:drawablePadding="5dp"
+
+
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+android:layout_below="@+id/ll2"
+        android:id="@+id/ll3"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#259294"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/baker"
+                        android:padding="15dp"
+
+                        android:layout_height="wrap_content"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="HOME STYLE FOOD !"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/next"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"></ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#470659"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp"
+
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/cricket"
+                        android:padding="15dp"
+
+                        android:layout_height="wrap_content"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="MATCH DAY OFFERS !"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/next"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"></ImageView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll4"
+        android:layout_below="@id/ll3"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+
+        app:cardCornerRadius="25dp"
+        app:cardElevation="5dp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/cbanner"
+                android:scaleType="fitXY"
+
+                android:layout_height="100dp"></ImageView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/ll4"
+        android:layout_marginTop="15dp"
+        android:id="@+id/ll5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Eat what makes you happy"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+
+            android:layout_height="wrap_content"></TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/rcv"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@id/ll5"
+        android:id="@+id/ll6"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="0.80"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/food"
+                    android:layout_height="200dp"></ImageView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="0.20"
+                android:layout_height="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:text="Urban Punjab \nNorth Indian ,Chinese , Rolls"
+                android:layout_height="wrap_content"></TextView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_marginTop="8dp"
+
+                    android:src="@drawable/rate"
+                    android:layout_height="25dp"></ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/ll6"
+            android:id="@+id/ll7"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+
+                app:cardCornerRadius="25dp"
+                android:outlineSpotShadowColor="@color/black"
+                android:outlineAmbientShadowColor="@color/black"
+                app:cardElevation="5dp"
+
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.80"
+                        android:layout_height="0dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/food"
+                            android:layout_height="200dp"></ImageView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_margin="3dp"
+                        android:layout_weight="0.20"
+                        android:layout_height="0dp">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="left"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+
+                                android:text="Urban Punjab \nNorth Indian ,Chinese , Rolls"
+                                android:layout_height="wrap_content"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:gravity="end"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_marginTop="8dp"
+
+                                android:src="@drawable/rate"
+                                android:layout_height="25dp"></ImageView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
